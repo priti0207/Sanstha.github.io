@@ -32,10 +32,6 @@
 
 /*** Button ***/
 
- .green-color {
-        color:green;
-    } 
-
 .btn {
     font-weight: 500;
     transition: .5s;

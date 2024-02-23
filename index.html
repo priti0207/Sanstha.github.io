@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 </head>
 
 <body>
@@ -357,7 +358,7 @@
                                 </div>
                                
                                 <div class="col-12">
-                                    <button class="btn btn-primary px-5" style="height: 60px;">
+                                    <button class="btn btn-primary px-5" onclick="openPaymentPopup()" style="height: 60px;">
                                         Donate Now
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
@@ -366,6 +367,11 @@
                                 </div>
                             </div>
                         </form>
+                        <div id="popup" style="display: none;">
+    <img id="phonePeQRCode" src="img/ph-5.jpeg" alt="PhonePe QR Code">
+    <button onclick="closePopup()">Close</button>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -507,6 +513,18 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
+
+    <script>
+    function openPaymentPopup() {
+        // Show the popup
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        // Hide the popup
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
     
 
     <!-- Template Javascript -->

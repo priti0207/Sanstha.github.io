@@ -249,7 +249,7 @@
 
 /*** Donate ***/
 .donate {
-    background: #0c2516;
+    background: rgba(0, 29, 35, .8);
 }
 
 .btn-group .btn-light:hover,

@@ -259,7 +259,7 @@
 }
 
 
-     .overlay {
+    .overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -289,7 +289,7 @@
             right: 10px;
             cursor: pointer;
             font-size: 20px;
-            color: #888;
+            color: red;
         }
 
         .qr-code {
